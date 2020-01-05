@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MicroRabbit.Domain.Core.Bus
 {
-	interface IEventHandler<in TEvent>: IEventHandler
+	public interface IEventHandler<in TEvent>: IEventHandler
 		where TEvent: Event
 	{
 		Task Handler(TEvent @event);
