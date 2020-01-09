@@ -36,7 +36,7 @@ namespace MicroRabbit.Banking.Api
 				c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Banking Microservice", Version = "v1" });
 			});
 
-			//services.AddMediatR(typeof(Startup));
+			services.AddMediatR(typeof(Startup));
 			RegisterServices(services);
 		}
 
